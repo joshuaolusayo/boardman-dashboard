@@ -1,0 +1,270 @@
+$dark-gray: #a0aec0;
+$gray: #828282;
+$deep-gray: #425466;
+$dark-blue: #01436b;
+$purple: #6c52b2;
+
+body {
+	font-family: "Manrope", sans-serif;
+	background: #f7fafc;
+	color: #000;
+}
+
+.bg-dark-gray {
+	background: $dark-gray;
+}
+
+.bg-gray {
+	background: $gray;
+}
+
+.bg-deep-gray {
+	background: $deep-gray;
+}
+
+.bg-dark-blue {
+	background: $dark-blue;
+}
+
+.text-dark-gray {
+	color: $dark-gray;
+}
+
+.text-gray {
+	color: $gray;
+}
+
+.text-deep-gray {
+	color: $deep-gray;
+}
+
+.text-dark-blue {
+	color: $dark-blue;
+}
+
+.text-purple {
+	color: $purple;
+}
+
+.overflow-scroll-x {
+	overflow: scroll-x;
+}
+
+/********************************
+
+            LAYOUT
+
+********************************/
+
+.layout {
+	position: relative;
+
+	@media screen and (max-width: 991px) {
+		&__content {
+			top: 0;
+			width: 100%;
+		}
+
+		&__nav {
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+			padding: 20px;
+			background-color: #fff;
+		}
+	}
+
+	@media screen and (min-width: 992px) {
+		display: grid;
+		grid-template-columns: 250px auto;
+		grid-template-areas: "navbar content";
+		column-gap: 2px;
+
+		&__nav {
+			grid-area: navbar;
+			background-color: #fff;
+			padding: 20px;
+			min-height: 100vh;
+			overflow: hidden;
+
+			.fixed {
+				position: fixed;
+				height: 90vh;
+			}
+		}
+
+		&__content {
+			grid-area: content;
+		}
+	}
+
+	.anticon {
+		vertical-align: 0;
+	}
+
+	.input-group-search {
+		max-width: 300px;
+	}
+
+	&__content {
+		margin-bottom: 78px;
+
+		&-header {
+			padding: 20px;
+			background: #fff;
+
+			.notification {
+				position: relative;
+
+				&-badge {
+					position: absolute;
+					width: 25px;
+					height: 25px;
+					right: -5px;
+					top: -5px;
+					line-height: 25px;
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
+/********************************
+
+            DASHBOARD
+
+********************************/
+.dashboard {
+	&__main {
+		padding: 20px;
+
+		.selec_t {
+			min-width: 250px;
+		}
+
+		&-cards {
+			@media screen and (min-width: 768px) {
+				display: grid;
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+				column-gap: 20px;
+			}
+
+			@media screen and (min-width: 1440px) {
+				grid-template-columns: repeat(3, minmax(0, 1fr));
+			}
+
+			.car_d {
+				background: #fff;
+				padding: 20px;
+				border-radius: 10px;
+
+				img {
+					width: 55px;
+					height: 55px;
+				}
+
+				span {
+					font-size: 14px;
+				}
+
+				.num {
+					font-size: 16px;
+				}
+
+				&.span-2 {
+					grid-column: span 2;
+				}
+			}
+		}
+	}
+
+	&__payment {
+		padding: 20px;
+
+		.bb-payment {
+			border-bottom: 2px solid #1d90b9;
+		}
+
+		.search {
+			overflow-x: scroll;
+			width: 100%;
+
+			.max-w-search {
+				width: 300px;
+			}
+		}
+
+		.table-responsive {
+			// overflow-x: scroll;
+		}
+	}
+}
+
+/********************************
+
+            DASHBOARD
+
+********************************/
+
+.overview {
+	&__main {
+		padding: 20px;
+
+		.selec_t {
+			min-width: 250px;
+		}
+
+		&-cards {
+			@media screen and (min-width: 992px) {
+				display: grid;
+				grid-template-columns: repeat(3, minmax(0, 1fr));
+				column-gap: 20px;
+			}
+
+			.car_d {
+				background: #fff;
+				padding: 20px;
+				border-radius: 10px;
+
+				img {
+					width: 55px;
+					height: 55px;
+				}
+
+				span {
+					font-size: 14px;
+				}
+
+				.num {
+					font-size: 16px;
+				}
+
+				&.span-2 {
+					grid-column: span 2;
+				}
+			}
+		}
+	}
+
+	&__payment {
+		padding: 20px;
+
+		.bb-payment {
+			border-bottom: 2px solid #1d90b9;
+		}
+
+		.search {
+			overflow-x: scroll;
+			width: 100%;
+
+			.max-w-search {
+				width: 300px;
+			}
+		}
+
+		.table-responsive {
+			// overflow-x: scroll;
+		}
+	}
+}
