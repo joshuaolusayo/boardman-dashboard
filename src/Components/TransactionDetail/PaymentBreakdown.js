@@ -23,7 +23,7 @@ const PaymentBreakdown = () => {
 	return (
 		<div className="payment__breakdown">
 			<h2 className="font-weight-bold mt-md-5 mb-4">Transaction History</h2>
-			<div className="bg-white py-5 px-4">
+			<div className="bg-white py-5 px-2 px-md-4">
 				<div className="bg-white border-bottom pb-0">
 					<h5 className="d-inline-block text-gray bb-payment pb-2 mb-2 mb-md-0">All Bulk Payments</h5>
 					<h5 className="d-inline-block text-gray pb-2 mb-2 mb-md-0 mx-3 mx-md-5">Successful</h5>
@@ -44,9 +44,11 @@ const PaymentBreakdown = () => {
 							aria-describedby="basic-addon2"
 						/>
 					</div>
-					<div className="mb-md-0 mx-3 d-flex align-items-center flex-nowrap">
+					<div className="mb-md-0 mx-3 d-flex align-items-center flex-wrap">
 						<input type="date" value="2020-01-01" />
+						&nbsp;
 						<ArrowRightOutlined />
+						&nbsp;
 						<input type="date" value="2020-01-01" />
 					</div>
 					<div className="d-flex flex-nowrap mx-3">
@@ -66,74 +68,167 @@ const PaymentBreakdown = () => {
 								<th>Amount</th>
 								<th>Milestone</th>
 								<th>Status</th>
-								<th>Last Payment Date</th>
+								<th>Payment Date</th>
 								<th>Actions</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td><Link className="text-dark-blue" to="/transaction-detail">#70058</Link></td>
+								<td>
+									<Link className="text-dark-blue" to="/transaction-detail">
+										#70058
+									</Link>
+								</td>
 								<td>Usman Abiola</td>
 								<td className="text-dark-blue text-underline">NG_Salary</td>
-								<td>#103,000,000</td>
-								<td>3/5</td>
-								<td className="text-success">
-									<span className="bg-success rounded px-2 text-light">Success</span> 1/4
+								<td>#20,000,000</td>
+								<td>9/9</td>
+								<td>
+									<span className="bg-success rounded px-2 text-light">Success</span>{" "}
+									<span className="text-success">9</span>/9
 								</td>
 								<td>10/02/2021 10:01pm</td>
 								<td>...</td>
 							</tr>
 							<tr>
-								<td><Link className="text-dark-blue" to="/transaction-detail">#70058</Link></td>
+								<td>
+									<Link className="text-dark-blue" to="/transaction-detail">
+										#70058
+									</Link>
+								</td>
 								<td>Usman Abiola</td>
 								<td className="text-dark-blue text-underline">NG_Salary</td>
-								<td>#103,000,000</td>
-								<td>3/5</td>
-								<td className="text-success">
-									<span className="bg-success rounded px-2 text-light">Success</span> 1/4
+								<td>#20,000,000</td>
+								<td>8/9</td>
+								<td>
+									<span className="bg-success rounded px-2 text-light">Success</span>{" "}
+									<span className="text-success">8</span>/9
 								</td>
 								<td>10/02/2021 10:01pm</td>
 								<td>...</td>
 							</tr>
 							<tr>
-								<td><Link className="text-dark-blue" to="/transaction-detail">#70058</Link></td>
+								<td>
+									<Link className="text-dark-blue" to="/transaction-detail">
+										#70058
+									</Link>
+								</td>
 								<td>Usman Abiola</td>
 								<td className="text-dark-blue text-underline">NG_Salary</td>
-								<td>#103,000,000</td>
-								<td>3/5</td>
-								<td className="text-success">
-									<span className="bg-success rounded px-2 text-light">Success</span> 1/4
+								<td>#20,000,000</td>
+								<td>7/9</td>
+								<td>
+									<span className="bg-success rounded px-2 text-light">Success</span>{" "}
+									<span className="text-success">7</span>/9
 								</td>
 								<td>10/02/2021 10:01pm</td>
 								<td>...</td>
 							</tr>
 							<tr>
-								<td><Link className="text-dark-blue" to="/transaction-detail">#70058</Link></td>
+								<td>
+									<Link className="text-dark-blue" to="/transaction-detail">
+										#70058
+									</Link>
+								</td>
 								<td>Usman Abiola</td>
 								<td className="text-dark-blue text-underline">NG_Salary</td>
-								<td>#103,000,000</td>
-								<td>3/5</td>
-								<td className="text-success">
-									<span className="bg-success rounded px-2 text-light">Success</span> 1/4
+								<td>#20,000,000</td>
+								<td>6/9</td>
+								<td>
+									<span className="bg-success rounded px-2 text-light">Success</span>{" "}
+									<span className="text-success">6</span>/9
 								</td>
 								<td>10/02/2021 10:01pm</td>
 								<td>...</td>
 							</tr>
 							<tr>
-								<td><Link className="text-dark-blue" to="/transaction-detail">#70058</Link></td>
+								<td>
+									<Link className="text-dark-blue" to="/transaction-detail">
+										#70058
+									</Link>
+								</td>
 								<td>Usman Abiola</td>
 								<td className="text-dark-blue text-underline">NG_Salary</td>
-								<td>#103,000,000</td>
-								<td>3/5</td>
-								<td className="text-success">
-									<span className="bg-success rounded px-2 text-light">Success</span> 1/4
+								<td>#20,000,000</td>
+								<td>5/9</td>
+								<td>
+									<span className="bg-success rounded px-2 text-light">Success</span>{" "}
+									<span className="text-success">5</span>/9
+								</td>
+								<td>10/02/2021 10:01pm</td>
+								<td>...</td>
+							</tr>
+							<tr>
+								<td>
+									<Link className="text-dark-blue" to="/transaction-detail">
+										#70058
+									</Link>
+								</td>
+								<td>Usman Abiola</td>
+								<td className="text-dark-blue text-underline">NG_Salary</td>
+								<td>#20,000,000</td>
+								<td>4/9</td>
+								<td>
+									<span className="bg-success rounded px-2 text-light">Success</span>{" "}
+									<span className="text-success">4</span>/9
+								</td>
+								<td>10/02/2021 10:01pm</td>
+								<td>...</td>
+							</tr>
+							<tr>
+								<td>
+									<Link className="text-dark-blue" to="/transaction-detail">
+										#70058
+									</Link>
+								</td>
+								<td>Usman Abiola</td>
+								<td className="text-dark-blue text-underline">NG_Salary</td>
+								<td>#20,000,000</td>
+								<td>3/9</td>
+								<td>
+									<span className="bg-success rounded px-2 text-light">Success</span>{" "}
+									<span className="text-success">3</span>/9
+								</td>
+								<td>10/02/2021 10:01pm</td>
+								<td>...</td>
+							</tr>
+							<tr>
+								<td>
+									<Link className="text-dark-blue" to="/transaction-detail">
+										#70058
+									</Link>
+								</td>
+								<td>Usman Abiola</td>
+								<td className="text-dark-blue text-underline">NG_Salary</td>
+								<td>#20,000,000</td>
+								<td>2/9</td>
+								<td>
+									<span className="bg-success rounded px-2 text-light">Success</span>{" "}
+									<span className="text-success">2</span>/9
+								</td>
+								<td>10/02/2021 10:01pm</td>
+								<td>...</td>
+							</tr>
+							<tr>
+								<td>
+									<Link className="text-dark-blue" to="/transaction-detail">
+										#70058
+									</Link>
+								</td>
+								<td>Usman Abiola</td>
+								<td className="text-dark-blue text-underline">NG_Salary</td>
+								<td>#20,000,000</td>
+								<td>1/9</td>
+								<td>
+									<span className="bg-success rounded px-2 text-light">Success</span>{" "}
+									<span className="text-success">1</span>/9
 								</td>
 								<td>10/02/2021 10:01pm</td>
 								<td>...</td>
 							</tr>
 						</tbody>
 					</table>
-					<button className="btn text-center text-dark-blue">See All Transactions</button>
+					<div className="text-center text-dark-blue text-underline">See All Transactions</div>
 				</div>
 			</div>
 		</div>

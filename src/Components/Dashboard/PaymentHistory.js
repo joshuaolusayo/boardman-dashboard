@@ -14,15 +14,17 @@ const exportOptions = [
 
 const PaymentHistory = () => {
 	const [selectedOption, setSelectedOption] = useState("All Time");
+	const [anotherOption, setAnotherOption] = useState("Export");
 
 	useEffect(() => {
 		console.log(selectedOption);
-	}, [selectedOption]);
+		console.log(anotherOption);
+	}, [selectedOption, anotherOption]);
 
 	return (
 		<div className="dashboard__payment">
 			<h2 className="font-weight-bold mt-md-5 mb-4">Bulk Payment History</h2>
-			<div className="bg-white py-5 px-4">
+			<div className="bg-white py-5 px-2 px-md-4">
 				<div className="bg-white border-bottom pb-0">
 					<h5 className="d-inline-block text-gray bb-payment pb-2 mb-0">All Bulk Payments</h5>
 				</div>
@@ -50,7 +52,7 @@ const PaymentHistory = () => {
 						<label htmlFor="Filter by">Filter by:</label>
 						<Select className="max-w-search h-100" options={options} onChange={(e) => setSelectedOption(e.value)} />
 					</div>
-					<Select className="max-w-search h-100" options={exportOptions} />
+					<Select className="max-w-search h-100" options={exportOptions} onChange={(e) => setAnotherOption(e.value)} />
 				</div>
 
 				<div className="table-responsive w-100">

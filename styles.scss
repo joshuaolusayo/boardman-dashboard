@@ -8,6 +8,7 @@ body {
 	font-family: "Manrope", sans-serif;
 	background: #f7fafc;
 	color: #000;
+	line-height: 35px;
 }
 
 .bg-dark-gray {
@@ -50,6 +51,14 @@ body {
 	overflow: scroll-x;
 }
 
+.text-underline {
+	text-decoration: underline;
+}
+
+.max-w-search {
+	width: 200px;
+}
+
 /********************************
 
             LAYOUT
@@ -71,6 +80,7 @@ body {
 			width: 100%;
 			padding: 20px;
 			background-color: #fff;
+            z-index: 10;
 		}
 	}
 
@@ -137,7 +147,11 @@ body {
 ********************************/
 .dashboard {
 	&__main {
-		padding: 20px;
+		padding: 10px;
+
+        @media screen and (min-width: 768px) {
+            padding: 20px
+        }
 
 		.selec_t {
 			min-width: 250px;
@@ -180,7 +194,11 @@ body {
 	}
 
 	&__payment {
-		padding: 20px;
+		padding: 10px;
+
+        @media screen and (min-width: 768px) {
+            padding: 20px
+        }
 
 		.bb-payment {
 			border-bottom: 2px solid #1d90b9;
@@ -189,27 +207,23 @@ body {
 		.search {
 			overflow-x: scroll;
 			width: 100%;
-
-			.max-w-search {
-				width: 300px;
-			}
-		}
-
-		.table-responsive {
-			// overflow-x: scroll;
 		}
 	}
 }
 
 /********************************
 
-            DASHBOARD
+            OVERVIEW
 
 ********************************/
 
 .overview {
 	&__main {
-		padding: 20px;
+		padding: 10px;
+
+        @media screen and (min-width: 768px) {
+            padding: 20px
+        }
 
 		.selec_t {
 			min-width: 250px;
@@ -248,7 +262,11 @@ body {
 	}
 
 	&__payment {
-		padding: 20px;
+		padding: 10px;
+
+        @media screen and (min-width: 768px) {
+            padding: 20px
+        }
 
 		.bb-payment {
 			border-bottom: 2px solid #1d90b9;
@@ -257,14 +275,70 @@ body {
 		.search {
 			overflow-x: scroll;
 			width: 100%;
+		}
+	}
+}
 
-			.max-w-search {
-				width: 300px;
+/********************************
+
+        TRANSACTION-DETAIL
+
+********************************/
+.detail {
+	&__main {
+		padding: 10px;
+
+		@media screen and (min-width: 768px) {
+			padding: 20px;
+		}
+
+		.profile-details {
+			padding: 30px 10px;
+
+			@media screen and (min-width: 768px) {
+				padding: 30px;
+			}
+
+			.profile-img {
+				width: 80px;
+				height: 80px;
+				object-fit: cover;
+			}
+
+			h3 {
+				font-size: 22px;
+			}
+
+			h4 {
+				font-size: 18px;
+			}
+
+			h5.heading {
+				font-size: 16px;
+			}
+
+			.bank-img {
+				width: 50px;
+				height: 50px;
+			}
+
+			.transfer {
+				font-size: 22px;
+			}
+
+			.success {
+				width: 25px;
+				height: 25px;
+				line-height: 25px;
 			}
 		}
+	}
+}
 
-		.table-responsive {
-			// overflow-x: scroll;
-		}
+.payment__breakdown {
+	padding: 10px;
+
+	@media screen and (min-width: 768px) {
+		padding: 20px;
 	}
 }

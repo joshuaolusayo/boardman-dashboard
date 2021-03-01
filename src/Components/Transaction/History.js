@@ -15,15 +15,17 @@ const exportOptions = [
 
 const History = () => {
 	const [selectedOption, setSelectedOption] = useState("All Time");
+	const [anotherOption, setAnotherOption] = useState("Export");
 
 	useEffect(() => {
 		console.log(selectedOption);
-	}, [selectedOption]);
+		console.log(anotherOption);
+	}, [selectedOption, anotherOption]);
 
 	return (
 		<div className="dashboard__payment">
 			<h2 className="font-weight-bold mt-md-5 mb-4">Transaction History</h2>
-			<div className="bg-white py-5 px-4">
+			<div className="bg-white py-5 px-2 px-md-4">
 				<div className="bg-white border-bottom pb-0">
 					<h5 className="d-inline-block text-gray bb-payment pb-2 mb-2 mb-md-0">All Bulk Payments</h5>
 					<h5 className="d-inline-block text-gray pb-2 mb-2 mb-md-0 mx-3 mx-md-5">Successful</h5>
@@ -42,6 +44,7 @@ const History = () => {
 							placeholder="Recipient's username"
 							aria-label="Recipient's username"
 							aria-describedby="basic-addon2"
+							defaultValue="Username"
 						/>
 					</div>
 					<div className="mb-md-0 mx-3 d-flex align-items-center flex-nowrap">
@@ -53,7 +56,7 @@ const History = () => {
 						<label htmlFor="Filter by">Filter by:</label>
 						<Select className="max-w-search h-100" options={options} onChange={(e) => setSelectedOption(e.value)} />
 					</div>
-					<Select className="max-w-search h-100" options={exportOptions} />
+					<Select className="max-w-search h-100" options={exportOptions} onChange={(e) => setAnotherOption(e.value)} />
 				</div>
 
 				<div className="table-responsive w-100">
@@ -72,7 +75,11 @@ const History = () => {
 						</thead>
 						<tbody>
 							<tr>
-								<td><Link className="text-dark-blue" to="/transaction-detail">#70058</Link></td>
+								<td>
+									<Link className="text-dark-blue" to="/transaction-detail">
+										#70058
+									</Link>
+								</td>
 								<td>Usman Abiola</td>
 								<td className="text-dark-blue text-underline">NG_Salary</td>
 								<td>#103,000,000</td>
@@ -84,7 +91,11 @@ const History = () => {
 								<td>...</td>
 							</tr>
 							<tr>
-								<td><Link className="text-dark-blue" to="/transaction-detail">#70058</Link></td>
+								<td>
+									<Link className="text-dark-blue" to="/transaction-detail">
+										#70058
+									</Link>
+								</td>
 								<td>Usman Abiola</td>
 								<td className="text-dark-blue text-underline">NG_Salary</td>
 								<td>#103,000,000</td>
@@ -96,7 +107,11 @@ const History = () => {
 								<td>...</td>
 							</tr>
 							<tr>
-								<td><Link className="text-dark-blue" to="/transaction-detail">#70058</Link></td>
+								<td>
+									<Link className="text-dark-blue" to="/transaction-detail">
+										#70058
+									</Link>
+								</td>
 								<td>Usman Abiola</td>
 								<td className="text-dark-blue text-underline">NG_Salary</td>
 								<td>#103,000,000</td>
@@ -108,7 +123,11 @@ const History = () => {
 								<td>...</td>
 							</tr>
 							<tr>
-								<td><Link className="text-dark-blue" to="/transaction-detail">#70058</Link></td>
+								<td>
+									<Link className="text-dark-blue" to="/transaction-detail">
+										#70058
+									</Link>
+								</td>
 								<td>Usman Abiola</td>
 								<td className="text-dark-blue text-underline">NG_Salary</td>
 								<td>#103,000,000</td>
@@ -120,7 +139,11 @@ const History = () => {
 								<td>...</td>
 							</tr>
 							<tr>
-								<td><Link className="text-dark-blue" to="/transaction-detail">#70058</Link></td>
+								<td>
+									<Link className="text-dark-blue" to="/transaction-detail">
+										#70058
+									</Link>
+								</td>
 								<td>Usman Abiola</td>
 								<td className="text-dark-blue text-underline">NG_Salary</td>
 								<td>#103,000,000</td>
@@ -133,7 +156,7 @@ const History = () => {
 							</tr>
 						</tbody>
 					</table>
-					<button className="btn text-center text-dark-blue">See All Transactions</button>
+					<div className="text-center text-dark-blue text-underline">See All Transactions</div>
 				</div>
 			</div>
 		</div>

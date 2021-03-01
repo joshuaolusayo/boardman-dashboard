@@ -5,7 +5,7 @@ import { BarsOutlined, PullRequestOutlined } from "@ant-design/icons";
 const LayoutNav = () => {
 	return (
 		<div className="layout__nav">
-			<div class="fixed">
+			<div className="fixed">
 				<img className="logo d-none d-lg-inline-block" src="/assets/logo.png" alt="Boardman Corporation Logo" />
 
 				<div className="d-flex justify-content-between flex-lg-column align-items-lg-start mt-lg-5">
