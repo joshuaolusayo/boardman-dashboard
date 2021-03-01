@@ -1,8 +1,8 @@
 import React from "react";
 import LayoutNav from "../Reusable/LayoutNav";
 import LayoutHeader from "../Reusable/LayoutHeader";
-import Overview from "./Overview";
-import History from "./History";
+import Detail from "./Detail";
+import PaymentBreakdown from "./PaymentBreakdown";
 
 const Transaction = () => {
 	return (
@@ -11,8 +11,8 @@ const Transaction = () => {
 				<LayoutNav />
 				<div className="layout__content">
 					<LayoutHeader />
-                    <Overview />
-					<History />
+                    <Detail />
+					<PaymentBreakdown />
 				</div>
 			</div>
 		</div>
