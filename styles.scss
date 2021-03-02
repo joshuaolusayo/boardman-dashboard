@@ -8,7 +8,6 @@ body {
 	font-family: "Manrope", sans-serif;
 	background: #f7fafc;
 	color: #000;
-	line-height: 30px;
 }
 
 .bg-dark-gray {
@@ -59,6 +58,10 @@ body {
 	width: 200px;
 }
 
+table {
+	font-size: 0.85rem;
+}
+
 /********************************
 
             LAYOUT
@@ -80,7 +83,7 @@ body {
 			width: 100%;
 			padding: 20px;
 			background-color: #fff;
-            z-index: 10;
+			z-index: 10;
 		}
 	}
 
@@ -147,16 +150,6 @@ body {
 ********************************/
 .dashboard {
 	&__main {
-		padding: 10px;
-
-        @media screen and (min-width: 768px) {
-            padding: 20px
-        }
-
-		.selec_t {
-			min-width: 250px;
-		}
-
 		&-cards {
 			@media screen and (min-width: 768px) {
 				display: grid;
@@ -196,9 +189,9 @@ body {
 	&__payment {
 		padding: 10px;
 
-        @media screen and (min-width: 768px) {
-            padding: 20px
-        }
+		@media screen and (min-width: 768px) {
+			padding: 20px;
+		}
 
 		.bb-payment {
 			border-bottom: 2px solid #1d90b9;
@@ -219,16 +212,6 @@ body {
 
 .overview {
 	&__main {
-		padding: 10px;
-
-        @media screen and (min-width: 768px) {
-            padding: 20px
-        }
-
-		.selec_t {
-			min-width: 250px;
-		}
-
 		&-cards {
 			@media screen and (min-width: 992px) {
 				display: grid;
@@ -264,9 +247,9 @@ body {
 	&__payment {
 		padding: 10px;
 
-        @media screen and (min-width: 768px) {
-            padding: 20px
-        }
+		@media screen and (min-width: 768px) {
+			padding: 20px;
+		}
 
 		.bb-payment {
 			border-bottom: 2px solid #1d90b9;
@@ -286,12 +269,6 @@ body {
 ********************************/
 .detail {
 	&__main {
-		padding: 10px;
-
-		@media screen and (min-width: 768px) {
-			padding: 20px;
-		}
-
 		.profile-details {
 			padding: 30px 10px;
 
@@ -349,14 +326,14 @@ body {
 
 ********************************/
 .bulk__payment {
-    &-main {
-        padding: 10px;
+	&-main {
+		padding: 10px;
 
 		@media screen and (min-width: 768px) {
 			padding: 20px;
-		}   
+		}
 
-        .profile-details {
+		.profile-details {
 			padding: 30px 10px;
 
 			@media screen and (min-width: 768px) {
@@ -370,24 +347,74 @@ body {
 			}
 
 			&.min-ht {
-                min-height: 500px;
-            }
+				min-height: 500px;
+			}
 
-            .sync {
-                border-radius: 20px;
-                border-color: #fff;
-            }
+			.sync {
+				border-radius: 20px;
+				border-color: #fff;
+			}
 
-            .processed {
-                width: 60px;
-                height: 60px;
-            }
+			.processed {
+				width: 60px;
+				height: 60px;
+			}
 
-            &.process_ed {
-                p {
-                    font-size: 20px;
-                }
-            }
+			&.process_ed {
+				p {
+					font-size: 20px;
+				}
+			}
 		}
-    }
+	}
+}
+
+/********************************
+
+        PAYMENT_PAGE
+
+********************************/
+
+.payment-page {
+	.refresh {
+		width: 25px;
+		height: 20px;
+		line-height: 20px;
+	}
+}
+
+/********************************
+
+        CONTACT_PAGE
+
+********************************/
+
+.contact {
+	.edit {
+		width: 40px;
+		height: 40px;
+	}
+}
+
+/********************************
+
+        GENERAL_PAGE
+
+********************************/
+
+.dashboard__main,
+.overview__main,
+.detail__main,
+.payment-page__main,
+.contact-page__main,
+.contact-page__table {
+	padding: 10px;
+
+	@media screen and (min-width: 768px) {
+		padding: 20px;
+	}
+}
+
+.selec_t {
+	min-width: 250px;
 }
