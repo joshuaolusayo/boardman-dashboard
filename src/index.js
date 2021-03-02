@@ -4,6 +4,7 @@ import ReactDOM from "react-dom";
 import Dashboard from "./Components/Dashboard";
 import Transaction from "./Components/Transaction";
 import TransactionDetail from "./Components/TransactionDetail";
+import BulkPayment from "./Components/BulkPayment";
 
 import "./styles.css";
 
@@ -14,6 +15,7 @@ ReactDOM.render(
 				<Route exact path="/" render={(props) => <Dashboard {...props} />} />
 				<Route exact path="/transaction" render={(props) => <Transaction {...props} />} />
 				<Route exact path="/transaction-detail" render={(props) => <TransactionDetail {...props} />} />
+				<Route exact path="/create-payment" render={(props) => <BulkPayment {...props} />} />
 			</Switch>
 		</BrowserRouter>
 	</React.StrictMode>,

@@ -15,7 +15,7 @@ const Main = () => {
 
 	return (
 		<div className="dashboard__main">
-			<div className="d-flex flex-column flex-md-row justify-content-md-between align-items-md-center mt-md-5 mb-4">
+			<div className="d-flex flex-column flex-md-row justify-content-md-between align-items-md-center mt-md-3 mb-4">
 				<h2 className="font-weight-bold">Dashboard</h2>
 				<Select className="selec_t" options={options} onChange={(e) => setSelectedOption(e.value)} />
 			</div>

@@ -25,9 +25,9 @@ const Detail = () => {
 				<div className="d-sm-flex justify-content-between mb-5">
 					<div className="d-flex">
 						<img className="profile-img mr-3 rounded-circle" src="/assets/avatar.png" alt="Usman Abiola" />
-						<div class="d-flex flex-column justify-content-center">
+						<div className="d-flex flex-column justify-content-center">
 							<h3 className="font-weight-bold">Usman Abiola</h3>
-							<p class="text-gray">
+							<p className="text-gray">
 								User ID: <span className="text-underline">2937382</span>
 							</p>
 						</div>
@@ -44,12 +44,12 @@ const Detail = () => {
 				</div>
 				<div>
 					<h5 className="text-gray heading font-weight-bold mb-3">Bank detail</h5>
-					<div class="d-sm-flex justify-content-between">
+					<div className="d-sm-flex justify-content-between">
 						<div className="d-flex">
 							<img className="bank-img mr-3 rounded-circle" src="/assets/avatar.png" alt="Bank" />
 							<div>
 								<h4 className="font-weight-bold">UBA Bank</h4>
-								<p class="text-gray">8173838922893</p>
+								<p className="text-gray">8173838922893</p>
 							</div>
 						</div>
 						<div>
@@ -59,7 +59,7 @@ const Detail = () => {
 				</div>
 				<hr className="bg-gray my-3" />
 				<div>
-					<div class="d-flex justify-content-between">
+					<div className="d-flex justify-content-between">
 						<div>
 							<h5 className="text-gray heading font-weight-bold mb-3">Bank detail</h5>
 							<h4>Unilever_Vender Payment 1</h4>

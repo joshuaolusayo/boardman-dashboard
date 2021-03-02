@@ -48,9 +48,9 @@ const History = () => {
 						/>
 					</div>
 					<div className="mb-md-0 mx-3 d-flex align-items-center flex-nowrap">
-						<input type="date" value="2020-01-01" />
+						<input type="date" defaultValue="2020-01-01" />
 						<ArrowRightOutlined />
-						<input type="date" value="2020-01-01" />
+						<input type="date" defaultValue="2020-01-01" />
 					</div>
 					<div className="d-flex flex-nowrap mx-3">
 						<label htmlFor="Filter by">Filter by:</label>
