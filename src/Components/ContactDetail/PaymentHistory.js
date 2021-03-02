@@ -22,7 +22,7 @@ const PaymentHistory = () => {
 
 	return (
 		<div className="payment__breakdown">
-			<h2 className="font-weight-bold mt-md-5 mb-4">Transaction History</h2>
+			<h2 className="font-weight-bold mt-md-5 mb-4">Payment History</h2>
 			<div className="bg-white py-5 px-2 px-md-4">
 				<div className="bg-white border-bottom pb-0">
 					<h5 className="d-inline-block text-gray bb-payment pb-2 mb-2 mb-md-0">All Bulk Payments</h5>
