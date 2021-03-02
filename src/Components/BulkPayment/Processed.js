@@ -48,7 +48,7 @@ const Processed = () => {
 				</div>
 			</div>
 			<button className="bg-success px-4 py-2 rounded btn text-light mr-3 mb-3 mb-md-0">
-				<Link className="text-light" to="/payment-page">
+				<Link className="text-" to="/payment-page">
 					<span className="font-weight-bold">Next:</span> <span>Start Disbursement</span>
 				</Link>
 			</button>
