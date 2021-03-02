@@ -33,7 +33,7 @@ const LayoutNav = () => {
 						</span>
 						<span className="d-none d-lg-inline-block">Dispute</span>
 					</Link>
-					<Link to="/" className="btn px-lg-0 mb-lg-3">
+					<Link to="/account-settings" className="btn px-lg-0 mb-lg-3">
 						<span className="mr-3 mt-n2">
 							<PullRequestOutlined />
 						</span>
