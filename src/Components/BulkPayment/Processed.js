@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Processed = () => {
 	return (
@@ -47,7 +48,9 @@ const Processed = () => {
 				</div>
 			</div>
 			<button className="bg-success px-4 py-2 rounded btn text-light mr-3 mb-3 mb-md-0">
-				<span className="font-weight-bold">Next:</span> <span>Start Disbursement</span>
+				<Link className="text-light" to="/payment-page">
+					<span className="font-weight-bold">Next:</span> <span>Start Disbursement</span>
+				</Link>
 			</button>
 			<button className="bg-secondary px-4 py-2 rounded btn text-light">
 				<span className="font-weight-bold">Next:</span> <span>Review</span>
