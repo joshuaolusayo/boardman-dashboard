@@ -2,7 +2,6 @@ body {
   font-family: "Manrope", sans-serif;
   background: #f7fafc;
   color: #000;
-  line-height: 30px;
 }
 
 .bg-dark-gray {
@@ -51,6 +50,10 @@ body {
 
 .max-w-search {
   width: 200px;
+}
+
+table {
+  font-size: 0.85rem;
 }
 
 /********************************
@@ -136,20 +139,6 @@ body {
             DASHBOARD
 
 ********************************/
-.dashboard__main {
-  padding: 10px;
-}
-
-@media screen and (min-width: 768px) {
-  .dashboard__main {
-    padding: 20px;
-  }
-}
-
-.dashboard__main .selec_t {
-  min-width: 250px;
-}
-
 @media screen and (min-width: 768px) {
   .dashboard__main-cards {
     display: grid;
@@ -211,20 +200,6 @@ body {
             OVERVIEW
 
 ********************************/
-.overview__main {
-  padding: 10px;
-}
-
-@media screen and (min-width: 768px) {
-  .overview__main {
-    padding: 20px;
-  }
-}
-
-.overview__main .selec_t {
-  min-width: 250px;
-}
-
 @media screen and (min-width: 992px) {
   .overview__main-cards {
     display: grid;
@@ -280,16 +255,6 @@ body {
         TRANSACTION-DETAIL
 
 ********************************/
-.detail__main {
-  padding: 10px;
-}
-
-@media screen and (min-width: 768px) {
-  .detail__main {
-    padding: 20px;
-  }
-}
-
 .detail__main .profile-details {
   padding: 30px 10px;
 }
@@ -390,4 +355,54 @@ body {
 
 .bulk__payment-main .profile-details.process_ed p {
   font-size: 20px;
+}
+
+/********************************
+
+        PAYMENT_PAGE
+
+********************************/
+.payment-page .refresh {
+  width: 25px;
+  height: 20px;
+  line-height: 20px;
+}
+
+/********************************
+
+        CONTACT_PAGE
+
+********************************/
+.contact .edit {
+  width: 40px;
+  height: 40px;
+}
+
+/********************************
+
+        GENERAL_PAGE
+
+********************************/
+.dashboard__main,
+.overview__main,
+.detail__main,
+.payment-page__main,
+.contact-page__main,
+.contact-page__table {
+  padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .dashboard__main,
+  .overview__main,
+  .detail__main,
+  .payment-page__main,
+  .contact-page__main,
+  .contact-page__table {
+    padding: 20px;
+  }
+}
+
+.selec_t {
+  min-width: 250px;
 }

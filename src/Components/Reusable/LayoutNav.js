@@ -21,13 +21,13 @@ const LayoutNav = () => {
 						</span>
 						<span className="d-none d-lg-inline-block">Transaction</span>
 					</Link>
-					<Link to="/" className="btn px-lg-0 mb-lg-3">
+					<Link to="/contact" className="btn px-lg-0 mb-lg-3">
 						<span className="mr-3 mt-n2">
 							<PullRequestOutlined />
 						</span>
 						<span className="d-none d-lg-inline-block">All Contacts</span>
 					</Link>
-					<Link to="/" className="btn px-lg-0 mb-lg-3">
+					<Link to="/dispute" className="btn px-lg-0 mb-lg-3">
 						<span className="mr-3 mt-n2">
 							<PullRequestOutlined />
 						</span>
